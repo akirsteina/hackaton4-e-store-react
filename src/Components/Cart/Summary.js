@@ -24,7 +24,7 @@ function Summary({ products, shippingAddress, billingAddress }) {
     }
 
     return (
-        <div className="row mt-5">
+        <div className="row my-5">
             <div className="col-4">
                 <div className="row">
                     <div className="col-12">
