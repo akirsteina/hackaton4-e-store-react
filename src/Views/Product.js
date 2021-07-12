@@ -33,7 +33,7 @@ function Product() {
         }
         return (
             <div key={index} className="col-6 col-sm-4 p-1 text-center">
-                <img alt="" src={image} className="img-fluid" onMouseEnter={() => { setMainImage(image) }} />
+                <img alt="" src={image} className="img-fluid rounded" onMouseEnter={() => { setMainImage(image) }} />
             </div>
         )
     });
