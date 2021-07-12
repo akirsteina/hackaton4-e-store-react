@@ -17,10 +17,11 @@ function Summary({ products, shippingAddress, billingAddress }) {
         );
     });
 
-    if (!shippingAddress || !billingAddress) {
-        swal('Please fill the address fields!');
-    };
-
+    const handleCheckOutbtn = () => {
+        if (!shippingAddress || !billingAddress) {
+            swal('Please fill the address fields!');
+        } 
+    }
 
     return (
         <div className="row mt-5">
@@ -56,12 +57,12 @@ function Summary({ products, shippingAddress, billingAddress }) {
                     </tbody>
                 </table>
                 <div className="text-end">
-                <h4>
-                    Total:
-                    <span className="badge bg-success mx-1">{totalPrice.toFixed(2)} EUR</span>
-                    <button className="btn category-button mx-3 fw-bolder">Check out</button>
-                </h4>
-            </div>
+                    <h4>
+                        Total:
+                        <span className="badge bg-success mx-1">{totalPrice.toFixed(2)} EUR</span>
+                        <button className="btn category-button mx-3 fw-bolder" onClick={handleCheckOutbtn}>Check out</button>
+                    </h4>
+                </div>
             </div>
         </div>
     )
