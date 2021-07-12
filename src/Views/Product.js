@@ -93,7 +93,7 @@ function Product() {
                     <div className="col-12 col-md-6 col-lg-8 px-5">
                         <form>
                             <div className="row pb-3">
-                                <div className="col-12">
+                                <div className="col-12 pb-2">
                                     <h4>
                                         Price:
                                         <span className="badge price-badge mx-1">{product.price.toFixed(2)} EUR</span>
